@@ -18,7 +18,7 @@ public static void getLikes(String[]array){
         print();
 
         if(likers.size() > 3)
-            System.out.printf("%s  ->   %s %s and %d liked this", likers, likers.get(0),likers.get(1),likers.size() - 2);
+            System.out.printf("%s  ->   %s %s and %d others liked this", likers, likers.get(0),likers.get(1),likers.size() - 2);
               
     }
     

@@ -11,7 +11,7 @@ def getLikes(array):
         print()
 
         if(len(listt) > 3):
-            print(f"{listt} ->  {listt[0]}, {listt[1]} and {len(listt) - 2} liked this");
+            print(f"{listt} ->  {listt[0]}, {listt[1]} and {len(listt) - 2} others liked this");
               
 
 array = ["ugo","vivian","viv","mathew"]
