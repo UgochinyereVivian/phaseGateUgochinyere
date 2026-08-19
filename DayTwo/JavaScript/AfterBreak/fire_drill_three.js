@@ -1,12 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 
 
-public class FireDrillThree{
-
-
-
-public static void getLikes(String[]array){
+let getLikes = (array)=>{
     ArrayList<String> likers = new ArrayList<>();
 
     System.out.println(likers + " -> no one liked this");
