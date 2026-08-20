@@ -1,62 +1,50 @@
-import java.util.Scanner;
 
-public class MainTransactionLog{
+class main:
 
-    public static Scanner scanner = new Scanner(System.in);
-    public static TransactionLogApplication logapp = new TransactionLogApplication();
+    logapp = new TransactionLogApplication();
 
-
-public static void main(String...ugo){
     logapp.initRecordApp(logapp);
         
-    MainTransactionLog main = new MainTransactionLog();
+    main = new main();
     main.message();
-    int userInput = scanner.nextInt();
+    userInput = int(input())
 
     while(userInput != 0):
-        switch(userInput){
+        match(userInput):
             case 1: 
-                print("enter amount: ",end="");
-                int amount = scanner.nextInt();
-                print(main.deposit(amount));
-                main.message();
-                print();
-                userInput = scanner.nextInt();
-                break;
+                print("enter amount: ",end="")
+                amount = int(input())
+                print(main.deposit(amount))
+                main.message()
+                print()
+                userInput = int(input())
+                break
                 
 
             case 2:
                 
-                print("enter amount: ",end="");
-                amount = scanner.nextInt();
-                print(main.withdraw(amount));
-                print();
-                message();
-                userInput = scanner.nextInt();
-                break; 
+                print("enter amount: ",end="")
+                amount = int(input())
+                print(main.withdraw(amount))
+                print()
+                message()
+                userInput = int(input())
+                break
             
 
             case 3:
-                main.showHistory();
-                main.message();
-                userInput = scanner.nextInt();
-                break; 
+                main.showHistory()
+                main.message()
+                userInput = int(input())
+                break
 
-            default: print("na you saka oo");
+            case_: print("na you saka oo");
                 
 
 
-        }
-      
-    }
 
-
-
-}
-
-
-public static void message(){
-    String message = """
+def message():
+    message = """
 
         ******Welcome To StayDoggy Digital Happ*********
         1. Deposit
@@ -64,73 +52,35 @@ public static void message(){
         3. Check Balance
         0. Exit
 
-    """;
-    println(message);
+    """
+    print(message);
 
 
 
-}
-
-
-public static double deposit(double amount){
-    if(amount < 0)
-        println("invalid deposit");
-    else{
-        println("amount : " + amount +" \nVAT: 0.0");
-        println("Successful✅️");
+def deposit(amount):
+    if(amount < 0):
+        print("invalid deposit");
+    else:
+        print("amount : " + amount +" \nVAT: 0.0");
+        print("Successful✅️");
         print("new account balance is: ");
         return logapp.deposit(amount);
-    }
-
-    return logapp.deposit(amount);
     
-}
 
 
-public static double withdraw(double amount){
-    if(amount > logapp.getBalance())
+def withdraw(amount):
+    if(amount > logapp.getBalance()):
          println("Insufficient Funds");
-    else if(amount <= 0)
-         println("Invalid Amount");
-    else{
-        println("amount : " + amount +" \nVAT: 0.0");
-        println("Successful✅️");
-        System.out.print("new account balance is: ");
+    elif(amount <= 0):
+         print("Invalid Amount");
+    else:
+        print("amount : " + amount +" \nVAT: 0.0");
+        print("Successful✅️");
+        print("new account balance is: ",end="");
         return logapp.withdraw(amount);
-    }
-
-   return logapp.withdraw(amount);
     
-}
+ 
 
-public static void showHistory(){
+def showHistory():
     logapp.showTransactionHistory();
 
-}
-
-public static void print(String message){
-    System.out.print(message);
-
-}
-
-public static void println(String message){
-    System.out.println(message);
-
-}
-
-public static void println(){
-    System.out.println();
-
-}
-
-public static void println(double message){
-    System.out.println(message);
-
-}
-
-
-
-
-
-
-}

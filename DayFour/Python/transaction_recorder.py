@@ -11,13 +11,13 @@ class TransactionRecorder:
 
     def depositRecorder(amount):
         newBalance = self.logapp.getBalance();
-        self.depositRecord.append("Deposited: " + amount + "newBalance is" + newBalance);    
+        self.depositRecord.append(f"Deposited: {amount) + newBalance is {newBalance}");    
 
 
 
     public void withdrawRecorder(amount):
         newBalance = self.logapp.getBalance();
-        self.depositRecord.append("Withdrawal: " + amount + "newBalance is" + newBalance);    
+        self.depositRecord.append(f"Withdrawal:  {amount} + newBalance is {newBalance}");    
 
 
     def getDepositHistory():
