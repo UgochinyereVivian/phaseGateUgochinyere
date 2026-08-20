@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class TaskTwo{
+
+public static void main(String...ugo){
+    Scanner scanner = new Scanner(System.in);
+    int count = 1;
+    int sum = 0;
+    System.out.println("enter a number: ");
+    for(; count < 11; count++){
+        int score = scanner.nextInt();
+        sum += score;
+    }
+    int average = sum/count;
+    System.out.println(average);
+
+}
+
+
+}
