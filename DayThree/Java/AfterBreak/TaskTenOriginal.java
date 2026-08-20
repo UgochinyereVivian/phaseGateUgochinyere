@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 public class TaskTen{
 
 
 public static int getRepeatedChar(String name){
     String [] stringArray = name.split("");
-    int [] repeat = new int[stringArray.length];
     int newrepeat = 0;
+    int count = 0;
     for(int character = 0; character < stringArray.length; character++){
 
         for(int index = 0; index < stringArray.length; index++){
@@ -14,22 +16,19 @@ public static int getRepeatedChar(String name){
                 newrepeat++;
             }
         }
-          if(repeat > 1){
-            repeat[character] = newrepeat-1;
+          if(newrepeat > 1){
+                count += 1;
           }
             newrepeat = 0;
     }
 
-    int largest = repeat[0];
-    for(int count = 0; count < repeat.length; count++){
-               if(repeat[count] > largest) largest = repeat[count];
-    }
-    return largest;
+
+    return count/2;
 
     }
 
 public static void main(String...ugo){
-    System.out.println(getRepeatedChar("111BAcb"));
+    System.out.println(getRepeatedChar("ooa111BAcb"));
 
 }
 
