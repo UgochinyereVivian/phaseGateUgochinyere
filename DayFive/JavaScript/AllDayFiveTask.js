@@ -41,14 +41,15 @@ let isEven = (number)=>{
 let isEven = (number_one,number_two, number_three)=>{
     let array = [number_one, number_two, number_three];
     let largest = array[0];
-    for(let number : array):
+    for(let number : array){
         if(number > largest){
             largest  = number
         }
+    }
     return largest
 }
 
-let simpleInterst = ( principal, time)=>{
+let simpleInterst = (principal, time)=>{
     let interest = (principal * time) / 100;
     return interest
 }

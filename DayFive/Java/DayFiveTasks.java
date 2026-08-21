@@ -41,9 +41,10 @@ public static boolean isEven(int number){
 public static int isEven(int number_one,int number_two, int number_three){
     int[] array = {number_one, number_two, number_three};
     int largest = array[0];
-    for(int number : array):
+    for(int number : array){
         if(number > largest)
             largest  = number;
+    }
 
     return largest;
 }
