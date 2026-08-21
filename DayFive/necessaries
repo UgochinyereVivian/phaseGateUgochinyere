@@ -1,0 +1,10 @@
+git add name_of_your_new_folder/
+git status
+git commit -m "Add new folder"
+
+
+javac -cp "junit-platform-console-standalone-1.11.0.jar:out" -d out TestFile.java CodeFile.java
+
+java -cp "junit-platform-console-standalone-1.11.0.jar:out" org.junit.platform.console.ConsoleLauncher --scan-classpath
+
+python3 -m unittest filename.py
