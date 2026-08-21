@@ -22,29 +22,8 @@ let addDigits = (number) => {
 
     
 
-let get_single_digit_in_array = (array)=>{
-    let count = 0;
-    let single = 0;
-    for(let element of array){
-        for(let ele of array){
-            if(element == ele){
-                count ++;
-                single = element
-            }
-        }
-   
-        if(count == 1)
-            break
-        else{
-            count = 0;
-            singe = 0;
-        }
-    return single;
 
-}
-
-
-let getSingleDigit= (array)=>{
+let getSingleDigit = (array)=>{
     let count = 0;
     let single = 0;
     multiple = "";
@@ -52,7 +31,7 @@ let getSingleDigit= (array)=>{
     for(let element of  array){
         for(let ele of array){
             if(element == ele){
-                count ++;
+                count +=1;
                 single = element;
             }
         }
@@ -67,8 +46,9 @@ let getSingleDigit= (array)=>{
     return single;
 
 }
-//console.log(addDigits(38))
-array = [1,2,2,1]
+
+console.log(addDigits(38))
+array = [1,2,2,6]
 console.log(getSingleDigit(array))
 
 
