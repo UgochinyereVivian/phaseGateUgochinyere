@@ -22,7 +22,7 @@ public static int square(int one){
 }
 
 public static double convertToFarenheit(int celsuis){
-    int farenheit = (celsuis * 2);
+    int farenheit = (9/5) * celsuis;
     return farenheit;
 
 }
@@ -32,6 +32,7 @@ public static boolean isEven(int number){
     for(in count = 0; count <= number; count++){
         if(number % divider == 0)
             counter ++;
+    }
         if(counter == 2)
             return true;
     return false;
@@ -42,9 +43,9 @@ public static int isEven(int number_one,int number_two, int number_three){
     int largest = array[0];
     for(int number : array):
         if(number > largest)
-            largest  = number
+            largest  = number;
 
-    return largest
+    return largest;
 }
 
 public static int reverse(int one){
@@ -52,7 +53,7 @@ public static int reverse(int one){
     String [] array = newNumber.split("");
     String reverse = "";
     for(String character : array){
-        reverse = character + reverse:
+        reverse = character + reverse;
     }
     
     int convertReverseToInt = Integer.parseInt(reverse);

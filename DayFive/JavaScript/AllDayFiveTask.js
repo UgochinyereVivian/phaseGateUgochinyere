@@ -21,7 +21,7 @@ let square = (one)=>{
 }
 
 let convertToFarenheit = (celsuis)=>{
-    let farenheit = (celsuis * 2);
+    let farenheit = (9/5)*celsuis;
     return farenheit;
 
 }
